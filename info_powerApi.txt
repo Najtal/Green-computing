@@ -1,0 +1,55 @@
+
+Téléchargement dernière archive :
+    http://bit.ly/1mjnbF9
+
+
+Sujets possibles :C
+
+    Empreinte énergétique de différents langages de programmation sur différents algorithmes de tri
+    Empreinte énergétique de différents frameworks web javascript sur "TodoMVC" 
+    Empreinte énergétique de différents frameworks web écrits en différents langages sur une application à développer
+    Empreinte énergétique d'un algorithme (ex : Hanoi, fibonacci etc.) version itérative/récursive dans différents langages
+    Empreinte énergétique d'un problème résolu en méthode classique vs Map/Reduce
+    Empreinte énergétique de différents types d'encodage avec différents taux de compression
+
+
+Rendu par groupe :
+
+    Lien vers un repo. GitHub contenant les sources du sujet choisi, ainsi que les fichiers de sortie.
+    Rapport avec analyse des résultats (i.e. avec graphes)
+    Deadline : 18/01/2016
+
+
+Rappels :
+
+Lien vers le cours : https://speakerdeck.com/mcolmant/cours-diagl-green-computing-2015
+Lien vers PowerAPI (permet de monitorer des processus sous système UNIX): 
+
+    Lien : http://bit.ly/1mjnbF9
+    Dézipper l'archive
+    Exécuter ./bin/powerapi [TDP: Double (W)] [Frequency: Long (ms)] [PIDS: Long*]
+    Exemple : ./bin/powerapi 84 250 3300 3301
+
+
+TDP des processeurs de la salle IAGL : 84W
+
+Pour trouver le modèle CPU : `cat /proc/cpuinfo | grep "model name" | head -n 1`, le TDP est indiqué dans la documentation Intel.
+
+
+Recuperer le pid à l'éxécution (maxime copyright):
+    
+#!/bin/bash
+
+jobs &>/dev/null
+./GreenComputing_C/a.out &
+new_job_started="$(jobs -n)"
+if [ -n "$new_job_started" ];then
+    VAR=$!
+else
+    VAR=
+fi
+echo $VAR
+./powerapi-iagl-3.3/bin/powerapi 84 $VAR
+mv powerapi.out powerapi_c.out
+
+

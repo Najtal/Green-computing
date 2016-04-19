@@ -1,0 +1,6 @@
+c:\users\jvdur\documents\visual studio 2015\Projects\MultipleThreadConsumptionTest\MultipleThreadConsumptionTest\bin\Debug\MultipleThreadConsumptionTest.exe.config
+c:\users\jvdur\documents\visual studio 2015\Projects\MultipleThreadConsumptionTest\MultipleThreadConsumptionTest\bin\Debug\MultipleThreadConsumptionTest.exe
+c:\users\jvdur\documents\visual studio 2015\Projects\MultipleThreadConsumptionTest\MultipleThreadConsumptionTest\bin\Debug\MultipleThreadConsumptionTest.pdb
+c:\users\jvdur\documents\visual studio 2015\Projects\MultipleThreadConsumptionTest\MultipleThreadConsumptionTest\obj\Debug\MultipleThreadConsumptionTest.csprojResolveAssemblyReference.cache
+c:\users\jvdur\documents\visual studio 2015\Projects\MultipleThreadConsumptionTest\MultipleThreadConsumptionTest\obj\Debug\MultipleThreadConsumptionTest.exe
+c:\users\jvdur\documents\visual studio 2015\Projects\MultipleThreadConsumptionTest\MultipleThreadConsumptionTest\obj\Debug\MultipleThreadConsumptionTest.pdb

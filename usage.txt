@@ -1,0 +1,9 @@
+
+
+java -jar GreenComp-ThreadsConcurence-Java.jar ST NT NR MM
+
+
+./GreenComp-ThreadsConcurence-CSharp ST NT NR MM
+
+
+./bin/powerapi 15 50 pid
